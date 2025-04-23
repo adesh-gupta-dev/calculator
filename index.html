@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="dark">
+    <header>
+<label class="switch">
+  <input type="checkbox">
+  <span class="slider"></span>
+</label>
+<span id="theme-name">THEME</span>
+    </header>
+    <div class="container">
+      <h1 class="heading">Calculator</h1>
+      
+      <input
+        type="text"
+        id="display"
+        readonly
+        placeholder="Enter number"
+        value=""
+      />
+
+      <div class="button">
+        <!-- Row 1 -->
+        <button class="number" id="keys" >7</button>
+        <button class="number" id="keys" >8</button>
+        <button class="number" id="keys" >9</button>
+        <button class="operator"  >
+          +
+        </button>
+
+        <!-- Row 2 -->
+        <button class="number" id="keys" >4</button>
+        <button class="number" id="keys" >5</button>
+        <button class="number" id="keys" >2</button>
+        <button class="operator" id="keys"  >
+          -
+        </button>
+
+        <!-- Row 3 -->
+        <button class="number" id="keys"  >1</button>
+        <button class="number" id="keys"  >2</button>
+        <button class="number" id="keys"  >3</button>
+        <button class="operator" id="keys"  >
+          *
+        </button>
+
+        <!-- Row 4 -->
+        <button class="operator" id="keys" >
+          .
+        </button>
+        <button class="number" id="keys" >0</button>
+        <button class="operator" id="keys"  >
+          /
+        </button>
+        <button class="operator" id="keys"  >
+          =
+        </button>
+
+        <!-- Row 5 -->
+        <button class="operator" id="clear"  >
+          AC
+        </button>
+        <button class="operator" id="delete" >
+          <img src="image.png" alt="Delete" width="20" height="20" />
+        </button>
+        <!-- (two empty grid cells here for spacing) -->
+      </div>
+    </div>
+    <footer>
+      <div class="left">
+        <a href="https://github.com/adesh-gupta-dev"><img src="res/github.svg" alt="github"></a>
+        <a href="https://www.instagram.com/your___adesh/"><img src="res/instagram.svg" alt="instagram"></a>
+        <a href="res/resume.pdf"><img src="res/pdf.svg" alt="resume"></a>
+      </div>
+      <u>
+        <strong>
+      <span id="footer"></span>
+      <span>© Adesh Gupta</span>
+        </strong>
+      </u>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
